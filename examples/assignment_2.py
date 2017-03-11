@@ -138,7 +138,7 @@ with graph.as_default():
         tf.matmul(tf_valid_dataset, weights) + biases)
     test_prediction = tf.nn.softmax(tf.matmul(tf_test_dataset, weights) + biases)
 
-num_steps = 3001
+num_steps = 300001
 
 with tf.Session(graph=graph) as session:
     tf.global_variables_initializer().run()
